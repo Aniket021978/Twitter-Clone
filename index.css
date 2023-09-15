@@ -1,0 +1,720 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", sans-serif;
+}
+.container{
+    display: grid;
+    grid-template-columns: 26% 39% 35%;
+    background: #000000;
+}
+.menu{
+    width: 99.8%;
+    border: 1px solid #2f3336;
+    height: 770px;
+}
+.menu-c{
+    width: 75%;
+    margin: 0 auto;
+}
+.logo{
+    padding: 10px 100px 30px 100px;
+}
+.logo img{
+    height: 40px;
+    width: 40px;
+}
+.options{
+    display: grid;
+}
+.options div a{
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 13px 30px 13px 30px;
+    border-radius: 30px;
+    color: white;
+}
+.options div{
+    padding: 2% 0% 8% 31%;
+}
+.options div a i{
+    font-weight: 1000; 
+    font-size: 18px;
+    padding: 0px 20px 0px 0px;
+}
+.options div a:hover{
+    background: #181818;
+    transition: .1s linear;
+}
+.options button{
+    padding: 15px 80px;
+    border-radius: 30px;
+    outline: none;
+    background: #1d9bf0;
+    color: white;
+    border: none;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.options button:hover{
+    background: #0093ff;
+    transition: .1s linear;
+    opacity: 1;
+}
+.cont-me{
+    width: 99.6%;
+    border: 1px solid #2f3336;
+    background: transparent;
+}
+.as a{
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+    padding: 0 0 0 10px;
+}
+.prefer{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    border-bottom: 1px solid #2f3336;
+    background: black;
+    justify-content: space-around;
+    height: 40px;
+}
+.prefer span a{
+    text-decoration: none;
+    color: #71767b;
+    font-size: 18px;
+    font-weight: 600;
+    transition: .2s linear;
+    margin-top: 25px;
+}
+.prefer span a:hover{
+    color: white;
+    margin-bottom: 20px;
+}
+.tweet{
+    max-height: 704px;
+    overflow-y: hidden;
+}
+.tweet:hover{
+    overflow-y: auto;
+}
+.y-t{
+    border-bottom: 1px solid #2f3336;
+    width: 100%;
+    height: auto;
+}
+.im{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 10px 15px;
+    height: auto;
+    place-items: start;
+}
+.im img{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    opacity: 0.9;
+}
+.im img:hover{
+    opacity: 1;
+}
+.im textarea{
+    padding: 0 0 0 10px;
+    outline: none;
+    border: none;
+    font-size: 18px; 
+    color: white;
+    letter-spacing: 0.5px;
+    width: 88.9%;
+    height: 70px;
+    margin-top: 10px;
+    overflow-y: hidden;
+    background: black;
+}
+.im textarea:hover{
+    overflow-y: visible;
+}
+.extra{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.extra button:hover{
+    cursor: pointer;
+}
+.more{
+    margin: 12px 0px 5px 15px;
+}
+.more span a{
+    text-decoration: none;
+    color: #00a7ff;
+    font-size: 15px;
+    padding: 8px 5px;
+    border-radius: 50%;
+    margin: 3px;
+    width: 10%;
+}
+.more span a:hover{
+    background: #031018;
+}
+.more span:nth-child(5){
+    color: rgb(29, 155, 240);
+    opacity: 0.6;
+}
+.more span a i:nth-child(1){
+    cursor: pointer;
+}
+.uploaded-image {
+    max-width: 100%;
+    margin-top: 10px; 
+}
+
+.extra span button{
+    margin: 0px 30px 8px 0px;
+    padding: 8px 22px;
+    border-radius: 30px;
+    border: none;
+    background: #0f4e78;
+    font-size: 16px;
+    color: white;
+    font-weight: 700;
+}
+.extra span button:hover{
+    background: #0f4378;
+}
+/* Styles for the modal */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+#modalCloseBtn {
+    margin-top: 10px;
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#modalCloseBtn:hover {
+    background-color: #0056b3;
+}
+
+.others-tweet{
+    width: 100%; 
+}
+.other-tweet{
+    width: 100%; 
+    border-bottom: 1px solid #2f3336;
+}
+.profile{
+    display: grid;
+    grid-template-columns: 12% 76% 12%;
+    margin: 20px 0px 10px 0px;
+    align-items: center;
+}
+.other-p{
+    padding: 0px 0px 0px 10px;
+}
+.other-p img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    opacity: 0.9;
+    cursor: pointer;
+}
+.other-p img:hover{
+    opacity: 1;
+}
+.new-msg span i{
+    padding: 0px 4px 0px 4px;
+    color: #0f4e78;
+    font-size: 20px;
+}
+.new-msg{
+    cursor: pointer;
+}
+.new-msg span p{
+    color: #5d5d5d;
+}
+.new-msg span b{
+    color: white;
+}
+.msg{
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 5px 0 0;
+    text-align: justify;
+    text-justify: inter-word;
+    word-wrap: break-word;
+}
+.new-msg span b:hover{
+    text-decoration: underline;
+}
+.m-o{
+    cursor: pointer;
+    color: white;
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+.image-v{
+    margin: 0 0 0 12%;
+}
+.image-v img{
+    border-radius: 20px;
+    width: 90%;
+    height: 280px;
+}
+.react{
+    margin: 25px 15px 18px 80px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 80%;
+    opacity: 0.7;
+    color: white;
+}
+.react div{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.react .comm{
+    margin-right: 50px;
+}
+.react .retweet{
+    margin-right: 50px;
+}
+.react .like{
+    margin-right: 40px;
+}
+.react .stable{
+    color: red;
+}
+.react .book{
+    margin-right: 30px;
+}
+.react div p{
+    padding: 0 0 0 5px;
+    font-size: 15px;
+    font-weight: 600;
+}
+.react div i{
+    padding: 5px 5px;
+    font-size: 20px;
+    border-radius: 50%;
+}
+.comm:hover{
+    color: #00a7ff;
+}
+.retweet:hover{
+    color: green;
+}
+/* .like:hover{
+    color: red;
+} */
+.book:hover{
+    color: #00a7ff;
+}
+.trending-menu{
+    width: 100%;
+}
+.trend-c{
+    width: 70%;
+    margin: 0 0 0 50px;
+}
+.search{
+    width: 100%;
+    height: 55px;
+    position: sticky;
+    top: 0;
+    background: black;
+    align-items: center;
+    z-index: 1000;
+}
+.search input{
+    width: 82%;
+    height: 40px;
+    margin: 1% 0 0 0;
+    border-radius: 30px;
+    outline: none;
+    border: none;
+    background: #202327;
+    padding: 0 10px 0 60px;
+    font-size: 15px;
+    font-weight: 400;
+    color: white;
+    letter-spacing: 1px;
+    font-family: sans-serif;
+}
+.search span{
+    position: absolute;
+    top: 12px;
+    left: 7%;
+    font-size: 20px;
+    font-weight: 100;
+    color: #454545;
+}
+.trending, .follow{
+    width: 100%;
+    background: #16181c;
+    border-radius: 20px;
+    margin: 0px 0px 20px 0px;
+    max-height: 333px;
+    overflow-y: hidden;
+}
+.trending:hover, .follow:hover{
+    overflow-y: auto;
+}
+.header{
+    width: 100%;
+    height: 55px;
+    border-bottom: 1px solid #2f3336;
+    color: white;
+}
+.header p{
+    padding: 15px 20px;
+    font-size: 18px;
+    font-weight: 900;
+}
+.trends , .persons{
+    width: 100%;
+}
+.trend{
+    display: grid;
+    grid-template-columns: 70% 30%;
+    border-bottom: 1px solid #2f3336;
+}
+.trend-msg{
+    margin: 15px 0 0 20px;
+}
+.trend-name{
+    margin: 0 0 10px 0;
+    cursor: pointer;
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+}
+.trend-name a, .trend-w a{
+    text-decoration: none;
+    font-size: 15px;
+    color: white;
+    font-weight: 600;
+}
+.trend-w{
+    margin: 0 0 20px 0;
+    cursor: pointer;
+    color: white;
+}
+.subject p{
+    font-size: 15px;
+    font-weight: 600;
+    text-justify: inter-word;
+    word-wrap: break-word;
+    margin: 0 0 10px 0;
+    cursor: pointer;
+    color: #71767b;
+}
+.trend-w p a{
+    text-decoration: none;
+    color: white;
+}
+.trend-w p a:hover{
+    text-decoration: underline;
+    opacity: 1;
+}
+.trendpic{
+    padding: 20px 0;
+}
+.trendpic img{
+    width: 70px;
+    height: 70px;
+    border-radius: 20px;
+}
+.trend:hover, .person:hover{
+    background: #16181c;
+}
+.show-more{
+    padding: 20px 20px;
+}
+.show-more a{
+    text-decoration: none;
+    color: #1d8dd8;
+}
+.show-more:hover{
+    background: #16181c;
+    border-radius: 0 0 20px 20px;
+}
+.person{
+    display: grid;
+    grid-template-columns: 20% 50% 30%;
+    padding: 10px 0;
+    align-items: center;
+    border-bottom: 1px solid #2f3336;
+}
+.pro{
+    padding: 0 0 0 10px;
+}
+.pro img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    opacity: 0.9;
+}
+.pro img:hover{
+    opacity: 1;
+}
+.followers-name p{
+    font-size: 16px;
+    font-weight: 600;
+}
+.name h3{
+    font-size: 16px;
+    color: #e7e9ea;
+}
+.name p{
+    padding: 5px 0 0 0;
+    color: #6c7176;
+    font-size: 15px;
+}
+.send-req .f-btn{
+    padding: 5px 15px;
+    outline: none;
+    border: 2px solid #0f4378;
+    color: black;
+    border-radius: 20px;
+    font-size: 17px;
+    text-transform: capitalize;
+    background: #d7dbdc;
+    opacity: 1;
+}
+.send-req .f-btn:hover{
+    background: #d7dbdc;
+    opacity: 0.9;
+    cursor: pointer;
+}
+.send-req .nbtn{
+    border: 2px solid #0f4378;
+    width: 105px;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 15px;
+    text-transform: capitalize;
+    color: white;
+    outline: none;
+    background: transparent;
+    padding: 10px;
+}
+@media (min-width:479px) and (max-width:1450px) {
+    .option span{
+        display: none;
+    }
+    .option button{
+        padding: 10px 10px;
+    }
+    .container{
+        grid-template-columns: 10% 50% 40%;
+    }
+    .menu-c{
+        width: 99.6%;
+    }
+    .option div a i{
+        padding: 0;
+        border-radius: 50%;
+    }
+    .profile{
+        grid-template-columns: 25% 40% 35%;
+    }
+    .im textarea{
+        width: 80%;
+    }
+}
+@media(max-width:960px) and (min-width:478px){
+    /* .menu{
+        display: none;
+    } */
+    .trending-menu{
+        display: none;
+    }
+    .container{
+        grid-template-columns: 100%;
+    }
+    .profile{
+        grid-template-columns: 20% 60% 20%;
+    }
+}
+@media(min-width:961px) and (max-width:1180px){
+    .menu-c .options{
+        grid-template-columns: 10%;
+    }
+    .menu-c .logo{
+        padding: 5px 0 5px 22px;
+    }
+    .options div a span{
+        font-size: 0px;
+        transition: .1s linear;
+    }
+    .options div a i{
+        padding: 12px 5px 5px 10px;
+    }
+    .options button{
+        padding: 12px 22px;
+    }
+}
+@media(min-width:1181px) and (max-width:1450px){
+    .menu-c .options{
+        grid-template-columns: 10%;
+    }
+    .menu-c .logo{
+        padding: 5px 0 5px 22px;
+    }
+    .options div a span{
+        font-size: 15px;
+        transition: .1s linear;
+    }
+    .options div a i{
+        padding: 12px 5px 5px 10px;
+    }
+    .options button{
+        padding: 12px 30px;
+    }
+}
+@media(min-width:320px) and (max-width:700px){
+    .options{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .options div{
+        padding: 0;
+    }
+    .options .sh span{
+        display: none;
+    }
+    .hide{
+        display: none;
+    }
+    .menu{
+        bottom: 0;
+        background: black;
+        position: fixed;
+        height: auto;
+        padding: 20px 0;
+        z-index: 1000;
+    }
+    .react .comm{
+        margin-left: -30px;
+    }
+    .react .retweet{
+        margin-left: -30px;
+    }
+    .react .like{
+        margin-left: -30px;
+    }
+    .react .book{
+        margin-left: -30px;
+    }
+    .menu-c{
+        margin: auto;
+    }
+    .tweet{
+        width: 100%;
+    }
+    .trending-menu{
+        display: none;
+    }
+    .im textarea{
+        width: 80%;
+    }
+    .container{
+        grid-template-columns: 100%;
+    }
+    .profile{
+        grid-template-columns: 20% 60% 20%;
+    }
+}
+@media(min-width:700px) and (max-width:960px) {
+    .menu-c .options{
+        grid-template-columns: 10%;
+    }
+    .menu-c .logo{
+        padding: 5px 0 5px 22px;
+    }
+    .options div a span{
+        font-size: 0px;
+        transition: .1s linear;
+    }
+    .options div a i{
+        padding: 12px 5px 5px 10px;
+    }
+    .options button{
+        padding: 12px 22px;
+    }
+    .container{
+        grid-template-columns: 10% 90%;
+    }
+}
+@media(min-width:320px) and (max-width:374px){
+    .options .sh a i{
+        margin-right: -50px;
+        padding-left: 10px;
+    }
+    .options .new{
+        margin-left: -20px;
+    }
+    .im textarea{
+        width: auto;
+    }
+}
+@media(min-width:375px) and (max-width:404px){
+    .options .new{
+        margin-left: -30px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

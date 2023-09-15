@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/1st clone/images/twitterlogo.jpeg">
+    <title>Home / X</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="container">
+        <div class="menu">
+            <div class="menu-c">
+            <div class="logo hide">
+                <img src="images/twitterlogo.jpeg" alt="">
+            </div>
+            <div class="options">
+                <div class="sh new"><a href="#"><i class="fa-solid fa-house"></i><span>Home</span></a></div>
+                <div class="sh"><a href="#"><i class="fa-solid fa-hashtag"></i><span>Explore</span></a></div>
+                <div class="sh"><a href="#"><i class="fa-solid fa-bell"></i><span>Notification</span></a></div>
+                <div class="sh"><a href="#"><i class="fa-solid fa-bookmark"></i><span>Bookmark</span></a></div>
+                <div class="hide"><a href="#"><i class="fa-solid fa-message"></i><span>Messages</span></a></div>
+                <div class="hide"><a href="#"><i class="fa-solid fa-list"></i><span>List</span></a></div>
+                <div class="hide"><a href="#"><i class="fa-solid fa-user"></i><span>Profile</span></a></div>
+                <div class="hide"><a href="#"><i class="fa-solid fa-ellipsis"></i><span>More</span></a></div>
+                <div class="hide"><button>Post</button></div>
+            </div>
+        </div>
+    </div>
+    <div class="cont-me">
+        <div class="as">
+            <a href="#">Home</a>
+        </div>
+        <div class="prefer">
+            <span>
+                <a href="#">For You</a>
+            </span>
+            <span>
+                <a href="#">Following</a>
+            </span>
+        </div>
+        <div class="tweet">
+            <div class="y-t">
+                <div class="im">
+                    <span><img src="images/me.jpg" alt="" class="top"></span>
+                    <textarea id="tweettxt" placeholder="What's Happenning"></textarea>
+                </div>
+                <div class="extra">
+                    <div class="more">
+                        <span>
+                            <a href="#">
+                            <label for="imageUpload">
+                                <i class="fa-regular fa-image"></i>
+                            </label>
+                            <input type="file" id="imageUpload" accept="image/*" style="display: none;">
+                            </a>
+                        </span>
+                        <span><a href="#"><i class="fa-solid fa-list"></i></a></span>
+                        <span><a href="#"><i class="fa-regular fa-face-smile"></i></a></span>
+                        <span><a href="#"><i class="fa-regular fa-calendar"></i></a></span>
+                        <span><a href="#"><i class="fa-solid fa-location-dot"></i></a></span>
+                    </div>
+                    <span><button class="btn">Post</button></span>
+                </div>
+            </div>
+            <div class="newPost">
+                <!-- //empty div for posting a new tweet -->
+            </div>
+            <div class="modal" id="emptyTweetModal">
+                <div class="modal-content">
+                    <p>Please enter a tweet before posting.</p>
+                    <button id="modalCloseBtn">OK</button>
+                </div>
+            </div>
+            <div class="others-tweet">
+                <div class="other-tweet">
+                    <div class="profile">
+                        <div class="other-p">
+                            <img src="images/user1.jpg" alt="">
+                        </div>
+                        <div class="new-msg">
+                        <span><p>Ms Dhoni <b><i class="fa fa-check-circle-o"></i>@msdhoni.<small>Yesterday</small></b>
+                        </p></span>
+                        <div class="msg">
+                            <p>hello,todays match</p>
+                        </div>
+                    </div>
+                    <div class="m-o">
+                        <i class="fa fa-ellipsis-h"></i>
+                    </div>
+                    </div>
+                    <div class="image-v">
+                        <img src="images/ms shot.jpg" alt="" height="30px" width="30px">
+                    </div>
+                    <div class="react">
+                        <div class="comm"><i class="fa-solid fa-comment"></i><p>12.8K</p></div>
+                        <div class="retweet"><i class="fa fa-retweet"></i><p>120K</p></div>
+                        <div class="like"><i class="fa-solid fa-heart"></i><p>5M</p></div>
+                        <div class="book"><i class="fa fa-upload"></i><p>100K</p></div>
+                    </div>
+                </div>
+                <div class="other-tweet">
+                    <div class="profile">
+                        <div class="other-p">
+                            <img src="images/user3.jpg" alt="">
+                        </div>
+                        <div class="new-msg">
+                        <span class="ime"><p>Virat Kohli <b><i class="fa fa-check-circle-o"></i>@viratkohli.<small>Yesterday</small></b>
+                        </p></span>
+                        <div class="msg">
+                            <p>hello,that was nice match</p>
+                        </div>
+                    </div>
+                    <div class="m-o">
+                        <i class="fa fa-ellipsis-h"></i>
+                    </div>
+                    </div>
+                    <div class="image-v">
+                        <img src="images/virat shot.webp" alt="" height="30px" width="30px">
+                    </div>
+                    <div class="react">
+                        <div class="comm"><i class="fa-solid fa-comment"></i><p>120K</p></div>
+                        <div class="retweet"><i class="fa fa-retweet"></i><p>1M</p></div>
+                        <div class="like stable"><i class="fa-solid fa-heart"></i><p>10M</p></div>
+                        <div class="book"><i class="fa fa-upload"></i><p>120K</p></div>
+                    </div>
+                </div>
+                <div class="other-tweet">
+                    <div class="profile">
+                        <div class="other-p">
+                            <img src="images/user2.jpg" alt="">
+                        </div>
+                        <div class="new-msg">
+                        <span><p>Christano Ronaldo <b><i class="fa fa-check-circle-o"></i>@Christano.<small>Yesterday</small></b>
+                        </p></span>
+                        <div class="msg">
+                            <p>hello,nice to meet you</p>
+                        </div>
+                    </div>
+                    <div class="m-o">
+                        <i class="fa fa-ellipsis-h"></i>
+                    </div>
+                    </div>
+                    <div class="image-v">
+                        <img src="images/ronaldo.jpeg" alt="" height="30px" width="30px">
+                    </div>
+                    <div class="react">
+                        <div class="comm"><i class="fa-solid fa-comment"></i><p>150k</p></div>
+                        <div class="retweet"><i class="fa fa-retweet"></i><p>1M</p></div>
+                        <div class="like"><i class="fa-solid fa-heart"></i><p>15M</p></div>
+                        <div class="book"><i class="fa fa-upload"></i><p>200K</p></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="trending-menu">
+        <div class="trend-c">
+            <div class="search">
+                <input type="text" placeholder="Search">
+                <span><i class="fa fa-search"></i></span>
+            </div>
+            <div class="trending">
+                <div class="header">
+                    <p>what's Happenning.</p>
+                </div>
+                <div class="trends">
+                    <div class="trend">
+                    <div class="trend-msg">
+                        <div class="trend-name">
+                            <p>Ipl 2023 live.</p>
+                        </div>
+                        <div class="subject">
+                            <p>Rcb beats mi by 100 runs</p>
+                        </div>
+                        <div class="trend-w">
+                            <a href="#">#Rcb vs Mi</a>
+                        </div>
+                    </div>
+                    <div class="trendpic">
+                        <img src="images/ipl.jpeg" alt="">
+                    </div>
+                    </div>
+                    <div class="trend">
+                    <div class="trend-msg">
+                        <div class="trend-name">
+                            <p>Ipl 2023 Recap.</p>
+                        </div>
+                        <div class="subject">
+                            <p>Punjab beats Srh by 10 runs</p>
+                        </div>
+                        <div class="trend-w">
+                            <a href="#">#Punjab vs SRH</a>
+                        </div>
+                    </div>
+                    <div class="trendpic">
+                        <img src="images/ipl.jpeg" alt="">
+                    </div>
+                    </div>
+                    <div class="trend">
+                    <div class="trend-msg">
+                        <div class="trend-name">
+                            <p>Ipl 2023 reacp.</p>
+                        </div>
+                        <div class="subject">
+                            <p>Mi beats Kkr by 1 runs</p>
+                        </div>
+                        <div class="trend-w">
+                            <a href="#">#Mi vs Kkr</a>
+                        </div>
+                    </div>
+                    <div class="trendpic">
+                        <img src="images/ipl.jpeg" alt="">
+                    </div>
+                    </div>
+                    <div class="trend">
+                    <div class="trend-msg">
+                        <div class="trend-name">
+                            <p>Ipl 2023 reacp.</p>
+                        </div>
+                        <div class="subject">
+                            <p>Delhi beats Lsg by 9 runs</p>
+                        </div>
+                        <div class="trend-w">
+                            <a href="#">#Delhi Capitals vs Lsg</a>
+                        </div>
+                    </div>
+                    <div class="trendpic">
+                        <img src="images/ipl.jpeg" alt="">
+                    </div>
+                    </div>
+                    <div class="show-more">
+                        <a href="#">Show More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="follow">
+                <div class="header">
+                    <p>Who to follow</p>
+                </div>
+                <div class="persons">
+                    <div class="person">
+                    <div class="pro">
+                        <img src="images/user3.jpg" alt="">
+                    </div>
+                    <div class="name">
+                        <div class="main-name">
+                            <h3>Virat Kohli</h3>
+                        </div>
+                        <div class="username">
+                            <p>@viratkohli</p>
+                        </div>
+                    </div>
+                    <div class="send-req">
+                        <button class="f-btn">Follow</button>
+                    </div>
+                </div>
+                    <div class="person">
+                    <div class="pro">
+                        <img src="images/user1.jpg" alt="">
+                    </div>
+                    <div class="name">
+                        <div class="main-name">
+                            <h3>Ms Dhoni</h3>
+                        </div>
+                        <div class="username">
+                            <p>@msdhoni</p>
+                        </div>
+                    </div>
+                    <div class="send-req">
+                        <button class="f-btn">Follow</button>
+                    </div>
+                </div>
+                    <div class="person">
+                    <div class="pro">
+                        <img src="images/user2.jpg" alt="">
+                    </div>
+                    <div class="name">
+                        <div class="main-name">
+                            <h3>Christano Ronaldo</h3>
+                        </div>
+                        <div class="username">
+                            <p>@Christano</p>
+                        </div>
+                    </div>
+                    <div class="send-req">
+                        <button class="f-btn">Follow</button>
+                    </div>
+                </div>
+                </div>
+                <div class="show-more">
+                    <a href="#">Show More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="index.js"></script>
+</body>
+</html>
